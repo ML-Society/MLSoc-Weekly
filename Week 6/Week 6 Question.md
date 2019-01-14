@@ -1,16 +1,18 @@
 # Question
 
-Train a decision tree, that trains on the data given back from `load_test_data()`.
+## Instruction
+Complete the code in template.py for each of the functions corresponding to each of the functions below. Only change params using the `params` dictionary in each function. Do not remove the random_seed functionality of the code. After finishing all exercises test it using example code at the end of the template file and see that you can atleast get corresponding expected accuracies.
 
-    # Returns data in np array sorted as:
-    in_sf,beds,bath,price,year_built,sqft,price_per_sqft,elevation = load_data()
+### Exercise 1
+Train a decision tree, that trains on `X_train` and `y_train` and returns a function which given a `y_test` array returns the predicted values `y_hat_test`.
 
-Then, write a function that uses this decision tree. Try to get at least 70% on
-`grade()`. Your function is given the following arguments as arrays, and is expected to
-return a numpy array that labels if the entry at the ith index is in San-Francisco, using
-`1` or `0`.
 
-    # Arguments
-    beds,bath,price,year_built,sqft,price_per_sqft,elevation
+### Exercise 2
+Same as above but with linear SVM.
 
-Both these functions are available in `data.py` (`import data`).
+
+### Exercise 3
+Same as above but with `rbf` SVM. Try the three different values for C as given above. Stick to the one that gives the highest accuracy.
+
+
+
